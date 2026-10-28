@@ -16,42 +16,49 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+Facts below come from the /setup interview (2026-10-28) and the project READMEs. Items marked **[confirm]** need Kayky's details before use; never invent numbers in an interview.
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Pedido Certo database design (data modeling, SQL, security)
+**S:** Restaurants lose orders and time when waiters walk tickets to the kitchen and bar. HSB wanted a SaaS that many restaurants could share safely.
+**T:** As HSB's lead developer, design the data layer so each restaurant only sees its own data and prices cannot be tampered with from the phone.
+**A:** Modeled the schema in PostgreSQL (Supabase) with `restaurant_id` on every table and Row Level Security policies; moved business rules into database functions (`place_order` recalculates prices from the menu, validates options, rejects sold-out items, and is idempotent on a client-generated id so offline retries never duplicate orders); added bcrypt PIN login with lockout and an audit log; wrote unit, database and Playwright tests. Built with Claude Code and reviewed the design choices myself.
+**R:** v1 complete with waiter, station, cashier and manager screens. Pilot with a restaurant was discussed but not closed. **[confirm: number of tests, time spent]**
+**Use for:** "Tell me about a database you designed", "How do you ensure data quality / integrity?", "Tell me about a project you are proud of"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Second internet link with load balancing (infrastructure, reliability)
+**S:** The registry office depended on a single internet connection for its daily work. **[confirm: what problem triggered it - outages, slowness?]**
+**T:** Help implement a second link and keep the office online if one link fails.
+**A:** Contributed to installing the second internet link and configuring load balancing on the router. **[confirm: equipment/router model, your exact part vs. the provider's]**
+**R:** The office gained connection redundancy. **[confirm: any measurable effect, e.g. fewer outages]**
+**Use for:** "Tell me about improving reliability", "Describe a technical problem you solved", "Experience with networking"
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 3. CRM Jurídico with WhatsApp chatbot (integration, privacy, AI)
+**S:** A law office needed to triage leads arriving through WhatsApp and keep client data compliant with LGPD.
+**T:** Build an intake chatbot and an internal CRM that records consent and routes leads to the team.
+**A:** Implemented a WhatsApp webhook with signature validation and deduplication, LGPD consent records, lead, case, contract and finance modules, private document storage with RLS, and an AI triage route that returns Zod-validated JSON from several model providers (including Anthropic Claude). Built with Claude Code.
+**R:** In final stage, being integrated with the chatbot before launch. **[confirm: launch date]**
+**Use for:** "Experience with APIs / integrations", "How do you handle sensitive data?", "Experience with AI tools"
+
+### 4. Learning while working full-time (self-direction, growth)
+**S:** Wanted to move from IT support into data engineering while working full-time and studying for a degree.
+**T:** Build real data skills without paid bootcamps.
+**A:** Started a structured 62-week plan in Sep 2026 (Python, SQL, Linux, Git, PostgreSQL first; AWS, Airflow, dbt, Spark later), with ~25 h/week, weekly English lessons and tracked weekly targets.
+**R:** On schedule. **[update with current week, finished projects and certifications]**
+**Use for:** "How do you learn new technologies?", "Why data engineering?", "Where do you see yourself in 5 years?"
 
 ## Common Tough Questions
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+### "Why do you want to leave the registry office?"
+> I grew from intern to IT assistant there and learned to own a whole environment. But my goal is data engineering, and the role has no data work. I want a team where I can build pipelines every day.
 
-### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+### "You don't have professional data engineering / cloud experience."
+> That's true. What I do have is hands-on PostgreSQL work: I designed schemas, RLS policies and database functions for my own products, and I'm following a structured plan toward AWS and Databricks certifications. I learn fast by building.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> As a solid mid-level data engineer working with cloud pipelines and AI data workflows, ideally on an international team, and helping newer people on the team.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> My spoken English is still intermediate. I take several lessons a week and practice technical English daily, and I make up for it with clear written communication.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.

@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** IT support and networking (help desk, LAN, dual-WAN load balancing, Active Directory accounts, backups), Supabase/PostgreSQL app databases (schemas, RLS, functions), full-stack web apps with Next.js and TypeScript built with Claude Code
+**Moderate match areas:** SQL, Python (Flask, SQLAlchemy), Excel/Power BI, Git/GitHub, Linux (all at a learning/junior level, actively studied)
+**Weak match areas:** cloud platforms (AWS/Azure/GCP), Airflow, dbt, Spark, Databricks, Kafka, Docker, data warehousing at scale, professional cybersecurity tooling (SIEM, SOC). These are in the study plan; treat postings that require them as stretch, not fail
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** IT support / systems administration in a small office (3+ years incl. internship)
+**Moderate:** building data-backed web products (PostgreSQL design, RLS, business rules in the database) as HSB co-founder; no live users yet
+**Entry-level:** data engineering, analytics engineering, data analysis, cybersecurity (no professional role yet; target junior/intern/trainee levels)
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -93,7 +93,10 @@ Does the role and company culture match the behavioral profile?
 ### 4. Location & Logistics (Pass/Fail + Notes)
 - Within commute range: PASS
 - Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Fully remote and open to candidates in Brazil / LATAM / worldwide (contractor or EOR): PASS - this is the ideal case
+- Remote but limited to US (or other country) residents or work authorization: FAIL via the Eligibility Gate (candidate is in Brazil without a foreign work permit)
+- On-site or hybrid outside Greater São Paulo: FAIL unless relocation is discussed
+- Requires relocation: FLAG (relocation abroad is a later goal; discuss with user, do not auto-reject)
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -107,19 +110,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Move into Data Engineering (cloud + AI) as a Junior Data Engineer, ideally remote for a US company
+- Accept stepping-stone roles that build data experience: Analytics Engineer, Data Analyst (SQL/Python), BI; cybersecurity analyst roles also welcome
+- Later: relocate abroad (phase 2); keep improving English from B1
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: building things end to end, database design, automation, solving technical problems with clear ownership, learning new data tools
+- Tasks that drain: noisy or interruption-heavy environments, work that depends constantly on other people
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: currently employed at about R$3,000/month, so no urgency; floor is above R$3,000/month in Brazil, or the USD equivalent after conversion and fees for remote roles. Prefer market average. PJ (contractor) is fine if it is genuine contracting, not a disguised CLT job
+- **Flexibility**: no schedule, travel or family constraints; can work US hours
+- **Professional development**: a role with real data pipelines, cloud exposure, mentorship, and English practice; finishing the ADS degree (end of 2027) in parallel
 
 ### 6. Salary Benchmark (Optional)
 

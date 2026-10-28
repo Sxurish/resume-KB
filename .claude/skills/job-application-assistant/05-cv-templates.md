@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Kayky Braz - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,14 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Kayky}{Braz}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{São Paulo, SP, Brazil}{}{}
+\phone[mobile]{+55 11 93095-2140}
+\email{kaykywilly@gmail.com}
+% TODO: add LinkedIn once Kayky sends the URL: \href{<linkedin-url>}{LinkedIn},
+\extrainfo{\href{https://github.com/Sxurish}{github.com/Sxurish}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +138,14 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Junior Data Engineer / Analytics Engineer roles:**
+> Aspiring data engineer with 3+ years in IT operations and hands-on experience designing PostgreSQL databases for real products. As co-founder of HSB Company, built multi-tenant SaaS applications with business rules, Row Level Security and tests inside PostgreSQL (Supabase), using Claude Code for AI-assisted development. Currently following a structured data engineering program (Python, SQL, Linux, Git, then AWS, Airflow, dbt and Spark) while completing a degree in Systems Analysis and Development (expected 2027).
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Data Analyst / BI roles:**
+> IT professional moving into data, with practical SQL and PostgreSQL experience from building dashboards and reporting features (finance KPIs, restaurant sales reports) in Next.js and Supabase. Comfortable turning business rules into reliable data models, and used to supporting non-technical users every day. Studying Python and advanced SQL; degree in Systems Analysis and Development in progress (expected 2027).
+
+**For IT Support / Junior Systems Administrator and Junior Cybersecurity Analyst roles:**
+> IT Assistant with 3+ years supporting a notary and registry office end to end: help desk, network and router administration, Active Directory accounts, backups, CCTV, telephony and hardware. Helped deliver a second internet link with load balancing for redundancy. Security-minded builder: implemented Row Level Security, bcrypt PIN login with lockout, audit logs and LGPD consent records in his own applications.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

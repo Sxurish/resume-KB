@@ -1,4 +1,4 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Kayky Braz
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
@@ -40,7 +40,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Kayky Braz - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -50,13 +50,12 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Kayky}{Braz}
+\address{São Paulo, SP, Brazil}{}{}
+\phone[mobile]{+55 11 93095-2140}
+\email{kaykywilly@gmail.com}
+% TODO: add LinkedIn once available: \href{<linkedin-url>}{LinkedIn},
+\extrainfo{\href{https://github.com/Sxurish}{github.com/Sxurish}}
 
 \begin{document}
 
@@ -67,7 +66,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{IT professional moving into data engineering, with 3+ years in IT operations and hands-on experience designing PostgreSQL databases for real products. As co-founder of HSB Company, built multi-tenant SaaS applications with business rules, Row Level Security and automated tests inside PostgreSQL (Supabase), using Claude Code for AI-assisted development. Following a structured data engineering program (Python, SQL, Linux, Git, then AWS, Airflow, dbt and Spark) while completing a degree in Systems Analysis and Development (expected 2027). Open to remote work across US time zones.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +76,17 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Databases \& SQL}: PostgreSQL (Supabase), schema design, Row Level Security policies, database functions and triggers, SQLAlchemy.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Programming}: Python (Flask, SQLAlchemy), TypeScript and JavaScript (Next.js, React, Zod).
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Data \& Reporting}: KPI dashboards and reports (Recharts), CSV exports, Excel, Power BI.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{IT Operations \& Networking}: help desk, LAN and router administration, dual-WAN load balancing, Active Directory accounts, backups, CCTV, telephony, hardware maintenance.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Tools \& Platforms}: Git and GitHub, Linux, Supabase, Vercel (serverless), Claude Code. Learning: Docker, AWS.
+
+\item \textbf{Security \& Privacy}: Row Level Security, bcrypt PIN authentication with lockout, audit logging, webhook signature validation, LGPD (Brazilian data protection law) consent records.
 
 \end{itemize}
 
@@ -97,34 +98,41 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2024--Present}{IT Assistant}{Cartório de Embu-Guaçu (notary and registry office)}{Embu-Guaçu, Brazil}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Provide end-to-end IT support for office staff: help desk, workstation and printer setup, software and hardware maintenance.}
+    \item {Administer the local network and router, user accounts (Active Directory) and backups.}
+    \item {Helped implement a second internet link with load balancing, adding redundancy to the office connection.}
+    \item {Maintain the CCTV and telephone systems; specify and purchase IT equipment.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jun 2023--Dec 2023}{IT Intern}{Cartório de Embu-Guaçu}{Embu-Guaçu, Brazil}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Supported daily IT operations; hired as IT Assistant at the end of the internship.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Ongoing}{Co-founder \& Lead Developer}{HSB Company (currently paused)}{São Paulo, Brazil}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Co-founded a small software studio and lead all development; products below are built with Claude Code and are pre-launch.}
+    \item {\textbf{Pedido Certo}: multi-tenant restaurant ordering SaaS. Orders flow in real time from waiters' phones to Kitchen and Bar screens. Business rules live in PostgreSQL functions (server-side pricing, idempotent order placement for offline retries); Row Level Security isolates each restaurant; unit, database and Playwright end-to-end tests. Next.js 15, TypeScript, Supabase, Vercel.}
+    \item {\textbf{CRM Jurídico}: legal intake chatbot and CRM for a law office. WhatsApp webhook with signature validation, LGPD consent records, private document storage, and an AI triage route returning schema-validated JSON (OpenAI, Anthropic Claude, Gemini). \href{https://github.com/Sxurish/Chatbot-Braz}{GitHub}}
+    \item {\textbf{Kaivo}: personal finance dashboard with KPIs, recurring transactions, goals, reports and CSV export on Supabase PostgreSQL with RLS. \href{https://github.com/Sxurish/dashboard-controle-financeiro}{GitHub}}
 \end{itemize}}}
 
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Study Planner} -- Python, Flask and SQLAlchemy app on Supabase PostgreSQL with a CLI and a web interface, deployed serverless on Vercel; generates weekly study schedules from subject difficulty, priority and exam dates. \href{https://github.com/Sxurish/ExpoTech2026}{GitHub}}
 \end{itemize}
 
 % ============================================================
@@ -135,14 +143,8 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2025--2027}{Technologist Degree, Systems Analysis and Development}{UniFECAF}{São Paulo, Brazil}{}{\vspace{1pt}
+In progress, expected December 2027. Started in Data Science (2025) and transferred with credits.
 }}
 
 \end{itemize}
@@ -154,27 +156,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {Portuguese (native), English (intermediate, B1; actively studying).}
 \end{itemize}
 
 % ============================================================

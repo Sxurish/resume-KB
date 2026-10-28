@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Kayky Braz
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Kayky Braz, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,76 +16,64 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Kayky Willy Rodrigues Braz (CV name: Kayky Braz)
+- **Location:** São Paulo, SP, Brazil (no commute, schedule or travel constraints; prefers remote; can work US hours; relocation abroad is a later goal)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
-
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+  | Portuguese | Native |
+  | English | B1 (intermediate, actively studying) |
+- **CV language:** English
+- **Work authorization:** Brazilian citizen, no foreign work permit. Remote roles abroad must accept candidates in Brazil (contractor/PJ or EOR).
+- **Status:** Employed as IT Assistant at Cartório de Embu-Guaçu since Jan 2024 (intern there from Jun 2023); open to new roles now
+- **LinkedIn headline:** pending (LinkedIn URL not provided yet)
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Technologist degree in Systems Analysis and Development (ADS)** (2025-expected end of 2027) - UniFECAF, São Paulo
+  - In progress. Started in Data Science (2025) and transferred with credits.
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **IT Assistant** (Jan 2024 - Present) - **Cartório de Embu-Guaçu** (Embu-Guaçu, Brazil)
+  - End-to-end IT support: help desk, workstations, printers, software and hardware maintenance
+  - Network/router, Active Directory accounts, backups, CCTV, telephony, equipment purchasing
+  - Helped implement a second internet link with load balancing
+- **IT Intern** (Jun 2023 - Dec 2023) - **Cartório de Embu-Guaçu**
+- **Co-founder & Lead Developer** - **HSB Company** (paused; hsbcompany.com.br)
+  - Built Pedido Certo (multi-tenant restaurant ordering SaaS), CRM Jurídico (WhatsApp intake chatbot + CRM), Kaivo (finance dashboard) with Next.js, TypeScript and Supabase/PostgreSQL, using Claude Code. No live customers yet.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** IT support and networking (3/5)
+- **Secondary:** SQL/PostgreSQL, Python, TypeScript/Next.js, Excel/Power BI (2/5 each)
+- **Domain:** small-office IT operations; small-business SaaS; LGPD-aware data handling
+- **Software:** Supabase, Vercel, Git/GitHub, Linux, Docker (learning), Claude Code
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- Pending (Kayky will provide). Planned: AWS Certified Data Engineer Associate, Databricks Data Engineer Associate.
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Independent** - prefers owning work end to end, avoids depending on others
+- **Focused** - works best in a calm, low-interruption environment
+- **Strengths:** ownership, self-directed learning, practical problem solving
+- **Growth areas:** spoken English (B1), team collaboration, early-career experience
+- **Thrives in:** remote/async teams with clear ownership
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building data systems and automations end to end
+- Learning cloud and AI data tools
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Remote-first tech companies hiring in LATAM (any sector)
+- Optional watchlist: Google, Microsoft, Amazon, Meta, Apple, Netflix, Nubank, Mercado Livre
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- None hard. Prefers genuine contracting if PJ (not a disguised CLT job).
+- Salary floor: above R$3,000/month in Brazil, or the USD equivalent after conversion and fees; prefers market average.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
