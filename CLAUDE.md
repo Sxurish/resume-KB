@@ -26,7 +26,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **CV language:** English
 - **Work authorization:** Brazilian citizen, no foreign work permit. Remote roles abroad must accept candidates in Brazil (contractor/PJ or EOR).
 - **Status:** Employed as IT Assistant at Cartório de Embu-Guaçu since Jan 2024 (intern there from Jun 2023); open to new roles now
-- **LinkedIn headline:** pending (LinkedIn URL not provided yet)
+- **LinkedIn:** https://www.linkedin.com/in/kaykybraz
 
 ### Education
 - **Technologist degree in Systems Analysis and Development (ADS)** (2025-expected end of 2027) - UniFECAF, São Paulo
@@ -34,11 +34,12 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Professional Experience
 - **IT Assistant** (Jan 2024 - Present) - **Cartório de Embu-Guaçu** (Embu-Guaçu, Brazil)
-  - End-to-end IT support: help desk, workstations, printers, software and hardware maintenance
+  - End-to-end IT support for a 20-user office: help desk, workstations, printers, software and hardware maintenance
+  - Installed and configured every workstation on Windows 11 (the old machines ran mixed Windows versions)
   - Network/router, Active Directory accounts, backups, CCTV, telephony, equipment purchasing
   - Helped implement a second internet link with load balancing
 - **IT Intern** (Jun 2023 - Dec 2023) - **Cartório de Embu-Guaçu**
-- **Co-founder & Lead Developer** - **HSB Company** (paused; hsbcompany.com.br)
+- **Co-founder & Lead Developer** (since 21 Mar 2026) - **HSB Company** (paused; hsbcompany.com.br)
   - Built Pedido Certo (multi-tenant restaurant ordering SaaS), CRM Jurídico (WhatsApp intake chatbot + CRM), Kaivo (finance dashboard) with Next.js, TypeScript and Supabase/PostgreSQL, using Claude Code. No live customers yet.
 
 ### Technical Skills
