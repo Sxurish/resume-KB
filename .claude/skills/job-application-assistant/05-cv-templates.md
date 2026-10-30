@@ -20,7 +20,7 @@ All CVs use the moderncv LaTeX package with the "banking" style and "blue" color
 cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
 ```
 
-Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on main_<company>_<role>.pdf (N pages, ...)` where N follows the page rule below: **exactly 1** for a US/international (English) CV, **1-2** for a Brazilian (Portuguese) CV. Any other page count is a failure that must be fixed before presenting to the user.
 
 ## Document Structure
 
@@ -248,8 +248,8 @@ Related trap: a bullet whose text begins with a literal `[` must be braced - `\i
 After writing the CV and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean. Workflow:
 
 1. Run `lualatex -interaction=nonstopmode main_<company>_<role>.tex`
-2. Check the output page count: must be exactly 2
-3. Read the PDF via the Read tool and visually inspect both pages
+2. Check the output page count: exactly 1 (US/international) or 1-2 (Brazil), per the Page Budget section
+3. Read the PDF via the Read tool and visually inspect every page
 4. Check for **orphaned entries**: a `\cventry` title line must never sit alone at the bottom of page 1 with its bullets on page 2
 
 ### Fixing common page-break problems
@@ -318,9 +318,12 @@ Two independent causes, both easy to avoid:
 
 **Cause 1 is mechanical in step 5d**: `python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --ascii-dates` scans the raw text layer for a year joined to a Unicode dash and exits 1 naming each hit with its code point (`U+2013 in 'Role Title 2016–2024'`). It deliberately reads the raw layer: the fold that lets `--contains "2016-2024"` match what the template renders maps that same en-dash back to `-`, so `--contains` can never see this. A year on either side of the dash is enough, so `Mar 2016 – Jul 2016` and `2016 – Present` are caught too; a numeric range with no year (`EUR 600k–1M`) is left alone. **Cause 2 stays a read-through check**: after extracting the text layer, confirm every experience entry shows a start *and* an end. Because both failures are silent and invisible in the PDF, the candidate otherwise discovers them only while filling in the application form.
 
-## Page Budget - Hard 2-Page Limit
+## Page Budget - Page Limit by Market
 
-The CV **must** fit on exactly 2 pages when compiled. Use these content limits as a guide:
+- **US/international CV (English):** **exactly 1 page**. Early-career US resumes are expected to be one page; recruiters skim it in seconds. Halve the budgets below (2-3 bullets for the most recent role, 1-2 for older ones) and drop References entirely.
+- **Brazilian CV (Portuguese):** **1-2 pages**, never 3. Use page 2 only when it carries real content, not a trailing section that spills a few lines.
+
+Use these content limits as a guide for a 2-page CV:
 
 | Section | Max budget |
 |---------|-----------|
@@ -361,7 +364,7 @@ Cut the lowest-total-score line first, regardless of which section it sits in.
 
 - Do not mechanically cut from the bottom of a static section list without checking relevance. "Cut the oldest role first" is wrong if that role is literally about the skill the posting asks for.
 - Do not cut the one concrete example the cover letter leans on. Relevance is measured against the cover letter you wrote, not just the job posting — interviewers will have read both.
-- Do not cut to fit if the fit is borderline (2.02 pages). Prefer `\enlargethispage{2-3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 3 that is more than a single trailing section).
+- Do not cut to fit if the fit is borderline (2.02 pages, or 1.02 for a 1-page US CV). Prefer `\enlargethispage{2-3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 3 that is more than a single trailing section).
 
 ## Recommended Section Order
 
